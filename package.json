@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "npx sass --watch main.sass:main.css --style compressed",
     "optimize": "npx postcss main.css -o main.opt.css --use autoprefixer --watch",
-    "watch": "concurrently \"npm:compile\" \"npm:optimize\""
+    "watch": "npx concurrently \"npm:compile\" \"npm:optimize\""
   },
   "browserslist": {
     "development": [
