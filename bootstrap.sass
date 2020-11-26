@@ -1,0 +1,47 @@
+=col($name, $size)
+    .col-md-#{$name}
+        width: unquote('#{$size}%')
+        float: left
+        padding:
+            left: 15px
+            right: 15px
+        min-height: 1px
+
+body 
+    margin: 0
+    
+*, *:before, *:after
+    box-sizing: border-box
+
+%center
+    margin: 0 auto
+    padding:
+        left: 15px
+        right: 15px
+
+.container
+    width: calc( 100% - 60px )
+    @extend %center
+
+.small-container
+    width: 1160px
+    @extend %center
+
+.row
+    margin:
+        left: -15px
+        right: -15px
+
+.container:before, .container:after, .row:before, .row:after
+    display: table
+    content: ""
+    width: 100%
+
+.text-left
+    text-align: center
+
+.text-right
+    text-align: right
+
+.text-center
+    text-align: center

@@ -1,0 +1,10 @@
+=font-face($family, $path, $weight: normal, $style: normal)
+  @font-face
+    font-family: $family
+    src: url('#{$path}.woff') format('woff'), url('#{$path}.woff2') format('woff2')
+    font-weight: $weight
+    font-style: $style
+
+//+font-face('museo', 'fonts/MuseoSans-300', normal, normal)
+//+font-face('museo', 'fonts/MuseoSans-500', 600, normal)
+//+font-face('museo', 'fonts/MuseoSans-700', bold, normal)
